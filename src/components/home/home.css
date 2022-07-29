@@ -1,0 +1,95 @@
+.carousel-img-size{
+    width: 100%;
+    height: 33em;
+}
+
+.logo-home-container{
+    padding: 1.5em;
+}
+
+.logo-img-home{
+    width: 6em;
+    height: 6em;
+}
+
+.mj-fashion-header{
+    font-size: 3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.collections-card-container{
+    margin : 1em 5em;
+}
+
+.collection-break-space{
+    padding: 2em;
+}
+
+.collection-img-home{
+    width: 100%;
+    height: 20em;
+}
+
+.collection-card-item{
+    cursor: pointer;
+    background-color: white;
+}
+
+.collection-card-item:hover{
+    background-color: white;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+  }
+
+.collections-label-text{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.collections-desc-text{
+    text-align: justify;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.view-more-container{
+    margin-top: 2em;
+}
+
+.view-btn-style{
+    width: 60%;
+    border-radius: 0;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.view-btn-style:hover{
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-img-size{
+        height: 20em;
+    }
+    .view-btn-style{
+        width: 80%;
+        margin-bottom: 2em;
+    }
+    .collections-card-container{
+        margin : 1em 2em;
+    }
+  }
+
+@media only screen and (min-width: 1400px) {
+    .carousel-img-size{
+        height: 45em;
+    }
+  }

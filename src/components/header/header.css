@@ -1,0 +1,59 @@
+.header-container{
+    height: 5em;
+}
+
+.logo-img{
+    height: 4em;
+    width: 5em;
+    cursor: pointer;
+}
+
+.logo-container{
+    width: 33%;
+}
+
+.header-bg-color{
+    background-color: black;
+}
+
+.nav-link-anchor{
+    text-decoration: 'none'
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: wheat !important;
+}
+
+.link-text{
+    color: wheat;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'BioRhyme', serif;
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: all 200ms ease-out;
+}
+
+  
+.link-text:hover {
+    font-size: 1.35rem;
+  }
+  
+.link-text:hover ~ hr {
+    width: 100%;
+  }
+  
+hr {
+    width: 0px;
+    height: 4px;
+    background: wheat;
+    border: wheat;
+    margin: 0px;
+    transition: width 450ms ease-out;
+  }
+
