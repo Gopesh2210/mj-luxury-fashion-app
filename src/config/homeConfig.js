@@ -20,25 +20,43 @@ export const homePageCarouselData = [
       }
 ];
 
-export const logoData = 
+export const logoData = [
     {
         "id": 1,
         "title": "Brand Logo",
         "description": "Brand Logo",
-        "imageName": "mj-logo"
+        "imageName": "mj-logo-black"
+    },
+    {
+      "id": 2,
+      "title": "Brand Logo",
+      "description": "Brand Logo Golden",
+      "imageName": "mj-logo-golden-header"
     }
+]
 
-export const collectionData = [
+export const featuredCollectionData = [
     {
         "id": 1,
-        "title": "Seasonal Collection",
-        "description": "Some representative placeholder content for the collection description slide.\nIt's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.\nAbove are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.",
-        "imageName": "collection-1-home"
-      },
-      {
-        "id": 2,
-        "title": "Premium Collection",
-        "description": "Some representative placeholder content for the collection description slide.\nIt's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.\nAbove are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.",
-        "imageName": "collection-2-home"
-      },
+        "title": "Kaliya",
+        "description": "Kaliya Description is present here",
+      }
+]
+
+export const featuredCollectionImages = [
+  {
+      "id": 1,
+      "title": "Kaliya Collection 1",
+      "imageName": "collection-1-home"
+    },
+    {
+      "id": 2,
+      "title": "Kaliya Collection 2",
+      "imageName": "collection-1-home"
+    },
+    {
+      "id": 3,
+      "title": "Kaliya Collection 3",
+      "imageName": "collection-1-home"
+    },
 ]

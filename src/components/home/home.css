@@ -4,31 +4,32 @@
 }
 
 .logo-home-container{
-    padding: 1.5em;
+    padding: 0.5em;
 }
 
 .logo-img-home{
-    width: 6em;
-    height: 6em;
-}
-
-.mj-fashion-header{
-    font-size: 3em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+    width: 18em;
+    height: 15em;
 }
 
 .collections-card-container{
     margin : 1em 5em;
 }
 
+.feature-collection-header{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .collection-break-space{
-    padding: 2em;
+    padding: 1em;
 }
 
 .collection-img-home{
     width: 100%;
-    height: 20em;
+    height: 15em;
 }
 
 .collection-card-item{
@@ -49,14 +50,17 @@
 
 .collections-label-text{
     text-align: center;
-    font-size: 1.1em;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-family: Brush Script MT;
+}
+
+.collections-desc-container{
+    text-align: center;
+    margin-top: 1em;
 }
 
 .collections-desc-text{
-    text-align: justify;
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
 

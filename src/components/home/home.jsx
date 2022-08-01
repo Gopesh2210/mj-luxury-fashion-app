@@ -1,8 +1,8 @@
 import React from 'react';
 import './home.css';
 import { Link } from 'react-router-dom';
-import { logoData, homePageCarouselData, collectionData } from '../../config/homeConfig';
-
+import { logoData, homePageCarouselData, featuredCollectionData, featuredCollectionImages } from '../../config/homeConfig';
+import { routePaths } from '../../config/routePaths'
 
 export default function Home() {
     return (
@@ -50,53 +50,46 @@ export default function Home() {
 
             <div>
                 <div className="logo-home-container">
-                    <img src={require(`../../assets/images/logo/${logoData.imageName}.jpeg`)} className="logo-img-home" alt="logo" />
-                </div>
-                <div className="mj-fashion-header">
-                    Manali Jagtap
+                    <img src={require(`../../assets/images/logo/${logoData[0].imageName}.jpeg`)} className="logo-img-home" alt="logo" />
                 </div>
             </div>
 
             <div className="collections-card-container">
 
+                <div className='feature-collection-header'>Featured Collection</div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6 col-12">
-                            <div className="collection-card-item">
-                                <img src={require(`../../assets/images/home/${collectionData[0].imageName}.jpeg`)} className="collection-img-home" alt="logo" />
+                        <p className="collections-label-text">{featuredCollectionData[0].title}</p>
+                        <div className="row">
+                            <div className="col-md-4 col-12">
+                                <div className="collection-card-item">
+                                    <img src={require(`../../assets/images/home/${featuredCollectionImages[0].imageName}.jpeg`)} className="collection-img-home" alt="logo" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-12">
-                            <p className="collections-label-text">{collectionData[0].title}</p>
-                            <p className="collections-desc-text">
-                                {collectionData[0].description}
-                            </p>
-                            <div className="view-more-container">
-                                <Link to="/seasonal_collection"><button type="button" className="btn  btn-outline-dark view-btn-style">view collection</button></Link>
+                            <div className="col-md-4 col-12">
+                                <div className="collection-card-item">
+                                    <img src={require(`../../assets/images/home/${featuredCollectionImages[1].imageName}.jpeg`)} className="collection-img-home" alt="logo" />
+                                </div>
+                            </div>
+                            <div className="col-md-4 col-12">
+                                <div className="collection-card-item">
+                                    <img src={require(`../../assets/images/home/${featuredCollectionImages[2].imageName}.jpeg`)} className="collection-img-home" alt="logo" />
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div className="row collections-desc-container">
+                        <p className="collections-desc-text">
+                            {featuredCollectionData[0].description}
+                        </p>
+                        <div className="view-more-container">
+                            <Link to={routePaths[2].path}><button type="button" className="btn  btn-outline-dark view-btn-style">view collection</button></Link>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="collection-break-space"></div>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 col-12">
-                            <p className="collections-label-text">{collectionData[1].title}</p>
-                            <p className="collections-desc-text">
-                                {collectionData[1].description}
-                            </p>
-                            <div className="view-more-container">
-                                <Link to="/premium_collection"><button type="button" className="btn  btn-outline-dark view-btn-style">view collection</button></Link>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-12">
-                            <div className="collection-card-item ">
-                                <img src={require(`../../assets/images/home/${collectionData[1].imageName}.jpeg`)} className="collection-img-home" alt="logo" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>
