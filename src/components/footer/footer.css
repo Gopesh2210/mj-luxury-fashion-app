@@ -1,15 +1,19 @@
+.footer-container{
+    height: 5em;
+    border-top: 2px solid beige;
+}
 .footer-background{
-    background-color: black;
+    background-color: white;
 }
 .footer-logo{
     cursor: pointer;
     margin: 0 0.5em;
-    color: white;
+    color: black;
     font-size: 1.5em;
 }
 
 .footer-logo:hover{
-    color: wheat;
+    color: #031f0f;
     transition: all 200ms ease-out;
     font-size: 2em;
 }
@@ -19,7 +23,7 @@
 }
 
 .footer-text{
-    color: white;
+    color: black;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }

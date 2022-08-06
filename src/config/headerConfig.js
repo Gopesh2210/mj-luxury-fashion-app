@@ -22,15 +22,10 @@ export const pretSubheader = [
     {
       "id": 1,
       "title": "Kaliya",
-    },
-    {
-      "id": 2,
-      "title": "Future Collection - xyz",
-    },
+    }
 ];
 
 export const luxSubheader = [
-    
     {
       "id": 1,
       "title": "Luxe Wear"

@@ -1,7 +1,9 @@
 .header-container{
     height: 5em;
 }
-
+.navbar-container{
+    background-color: white;
+}
 .logo-img{
     height: 5em;
     width: 8em;
@@ -21,15 +23,16 @@
 }
 
 .nav-link{
-    color: white !important;
+    color: black !important;
 }
 
 .nav-link:hover{
-    color: wheat !important;
+    color: burlywood !important;
+    font-size: 1.25em;
 }
 
 .link-text{
-    color: wheat;
+    color: black;
     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
@@ -45,6 +48,6 @@
 }
 
 .header-dropdown .dropdown-menu .dropdown-item:hover{
-    background-color: wheat !important;
+    background-color: beige !important;
 }
 

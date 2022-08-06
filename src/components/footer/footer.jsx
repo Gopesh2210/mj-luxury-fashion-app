@@ -7,7 +7,7 @@ import { emailId } from '../../config/contactConfig'
 
 export default function Footer() {
     return (
-        <div>
+        <div className='footer-container'>
             <div className='footer-background'>
                 <div className="container">
                     <div className="row">

@@ -1,23 +1,108 @@
 .discover-main-container{
-    background: linear-gradient(to bottom, #F5F5DC 0%, #E6E6CD 100%);
-    height: 60em;
+    min-height: 100vh;
+    background-color: black;
+}
+.desktop-view-discover{
+    display: block;
+}
+.mobile-view-discover{
+    display: none;
 }
 .discover-header{
     font-size: 2em;
     font-weight: 400;
-    padding: 0.5em;
+    margin-top: 0.5em;
+    color: wheat;
 }
+
 .discover-image{
-    height: 15em;
-    width: 15em;
-    border-radius: 50%;
-    margin-top: 1em;
+    height: 25em;
+    width: 25em;
+    margin-top:2.5em;
 }
 .discover-content-container{
-    padding: 2em;
+    padding: 1em;
     text-align: justify;
+    color: white;
 }
-.discover-name{
+.pointers-desc{
     font-size: 1.25em;
-    padding: 0.5em;
+    margin-top: 0.5em;
+}
+.sectional-label{
+    font-size: 2.5em;
+    padding-top: 0.5em;
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: black;
+    font-family:monospace;
+}
+
+/* SECTIONAL STYLES */
+
+.sectional-container{
+    justify-content: center;
+    background-color: white;
+}
+
+.event-desc{
+    color: black;
+    padding: 25%;
+}
+.event-image{
+    height: 100%;
+    width: 100%;
+}
+#sectional-d-col-1.col-6{
+    padding: 0 !important; 
+}
+#sectional-d-col-2.col-6{
+    padding: 0 !important; 
+}
+#sectional-d-col-3.col-6{
+    padding: 0 !important; 
+}
+#sectional-d-col-4.col-6{
+    padding: 0 !important; 
+}
+
+/* SCREEN RESIZING STYLES */
+
+@media only screen and (max-width: 991px) {
+    .desktop-view-discover{
+        display: none;
+    }
+    .mobile-view-discover{
+        display: block;
+    }
+    .discover-image{
+        width: 22.5em;
+    }
+    .event-desc{
+        padding: 0.5em 0;
+        margin-bottom: 2em;
+    }
+    .event-image{
+        width: 85%;
+        padding: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .discover-image{
+        height: 12.5em;
+        width: 12.5em;
+        margin-top:1em;
+    }
+    .pointers-desc{
+        font-size: 1em;
+        margin-top: 0.25em;
+    }
+    .discover-content-container{
+        padding: 0.25em;
+        text-align: justify;
+    }
+    .event-image{
+        padding: 0.5em;
+    }
 }

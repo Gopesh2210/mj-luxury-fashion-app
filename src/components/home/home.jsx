@@ -1,13 +1,15 @@
 import React from 'react';
 import './home.css';
-import { Link } from 'react-router-dom';
-import { logoData, homePageCarouselData, featuredCollectionData, featuredCollectionImages } from '../../config/homeConfig';
-import { routePaths } from '../../config/routePaths'
+import { homePageCarouselData, homePageBranding } from '../../config/homeConfig';
+
+// import { Link } from 'react-router-dom';
+// import { logoData, homePageCarouselData, featuredCollectionData, featuredCollectionImages } from '../../config/homeConfig';
+// import { routePaths } from '../../config/routePaths'
 
 export default function Home() {
     return (
         <div>
-            <div>
+            <div className="home-container">
                 <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -46,15 +48,11 @@ export default function Home() {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-            </div>
-
-            <div>
-                <div className="logo-home-container">
-                    <img src={require(`../../assets/images/logo/${logoData[0].imageName}.jpeg`)} className="logo-img-home" alt="logo" />
+                <div className='home-branding'>
+                    <img src={require(`../../assets/images/home/${homePageBranding.imageName}.jpeg`)} className="home-branding-img" alt="logo" />
                 </div>
-            </div>
 
-            <div className="collections-card-container">
+                {/* <div className="collections-card-container">
 
                 <div className='feature-collection-header'>Featured Collection</div>
                 <div className="container">
@@ -90,8 +88,8 @@ export default function Home() {
 
                 </div>
                 <div className="collection-break-space"></div>
+            </div> */}
             </div>
-
         </div>
     )
 }

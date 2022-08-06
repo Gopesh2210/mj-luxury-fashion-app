@@ -31,32 +31,14 @@ export const logoData = [
       "id": 2,
       "title": "Brand Logo",
       "description": "Brand Logo Golden",
-      "imageName": "mj-logo-golden-header"
+      "imageName": "mj-logo-black-resized"
     }
 ]
 
-export const featuredCollectionData = [
+export const homePageBranding = 
     {
         "id": 1,
-        "title": "Kaliya",
-        "description": "Kaliya Description is present here",
-      }
-]
+        "title": "home-brand",
+        "imageName": "home-branding"
+    }
 
-export const featuredCollectionImages = [
-  {
-      "id": 1,
-      "title": "Kaliya Collection 1",
-      "imageName": "collection-1-home"
-    },
-    {
-      "id": 2,
-      "title": "Kaliya Collection 2",
-      "imageName": "collection-1-home"
-    },
-    {
-      "id": 3,
-      "title": "Kaliya Collection 3",
-      "imageName": "collection-1-home"
-    },
-]

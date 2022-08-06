@@ -10,11 +10,11 @@ export default function Header() {
     return (
         <div className="header-container">
 
-            <nav className="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-md fixed-top navbar-container navbar-light">
                 <div className="container-fluid">
                     <div className="logo-container">
                         <Link to={routePaths[0].path}>
-                            <img src={require(`../../assets/images/logo/${logoData[1].imageName}.png`)} className="logo-img" alt="logo" />
+                            <img src={require(`../../assets/images/logo/${logoData[1].imageName}.jpeg`)} className="logo-img" alt="logo" />
                         </Link>
                     </div>
 
@@ -26,21 +26,24 @@ export default function Header() {
 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item dropdown header-dropdown">
+                                {/*TITLE OF MAIN HEADER*/}
                                 <span className="link-text nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     {headerOptions[0].title}
                                 </span>
                                 <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    {/*TITLE OF SUB HEADERS*/}
                                     <Link to={routePaths[2].path} style={{ textDecoration: 'none' }}>
                                         <li><div className="dropdown-item">{pretSubheader[0].title}</div></li>
                                     </Link>
-                                    <li><div className="dropdown-item">{pretSubheader[1].title}</div></li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown header-dropdown">
+                                {/*TITLE OF MAIN HEADER*/}
                                 <span className="link-text nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     {headerOptions[1].title}
                                 </span>
-                                <ul  className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <ul className="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    {/*TITLE OF SUB HEADERS*/}
                                     <Link to={routePaths[3].path} style={{ textDecoration: 'none' }}>
                                         <li><div className="dropdown-item">{luxSubheader[0].title}</div></li>
                                     </Link>
