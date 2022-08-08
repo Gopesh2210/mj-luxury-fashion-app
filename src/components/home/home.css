@@ -18,7 +18,7 @@
 
 .home-branding-img{
     width: 100%;
-    height: 22.5em;
+    height: 30em;
 }
 
 /* COLLECTIONS STYLING */
@@ -107,9 +107,7 @@
     }
   }
 
-@media only screen and (min-width: 1500px) {
+/* @media only screen and (min-width: 1500px) {
     .home-branding-img{
-        height: 25em;
-        width: 80%;
     }
-  }
+  } */

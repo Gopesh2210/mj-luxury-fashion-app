@@ -11,12 +11,12 @@
     margin: 1em;
     text-transform: uppercase;
 }
-.collection-label-image-container{
+.collection-label-container{
     margin: 1em;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-.collection-label-image{
+.collection-label{
     width: 100%;
     height: 30em;
 }
@@ -52,4 +52,10 @@
     text-transform: capitalize;
 }
 
+@media only screen and (max-width: 700px) {
+    .collection-label{
+        width: 100%;
+        height: 20em;
+    }
+}
 

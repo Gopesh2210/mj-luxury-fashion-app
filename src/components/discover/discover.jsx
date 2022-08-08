@@ -33,43 +33,58 @@ export default function Discover() {
                     <div className="sectional-label">Our History</div>
                     {ourHistoryData.map((ourHistoryDataItem, idx) => (
                         <div key={idx}>
-                            <div className='row'>
-                                <div id="sectional-d-col-1" className="col-6">
-                                    <img src={require(`../../assets/images/discover/${ourHistoryDataItem.imageName}.jpeg`)} className="event-image" alt="logo" />
+                            {idx % 2 === 0 &&
+                                <div className='row'>
+                                    <div id="sectional-d-col-1" className="col-6">
+                                        <img src={require(`../../assets/images/discover/${ourHistoryDataItem.imageName}.jpeg`)} className="event-image" alt="logo" />
+                                    </div>
+                                    <div id="sectional-d-col-2" className="col-6">
+                                        <div className="event-name-padding">
+                                            <div className="event-title">{ourHistoryDataItem.title}</div>
+                                            <div className="event-desc">{ourHistoryDataItem.description}</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div  id="sectional-d-col-2" className="col-6">
-                                    <div className="event-desc">{ourHistoryDataItem.description}</div>
+                            }
+                            {idx % 2 !== 0 &&
+                                <div className='row'>
+                                    <div id="sectional-d-col-3" className="col-6">
+                                        <div className="event-name-padding">
+                                            <div className="event-title">{ourHistoryDataItem.title}</div>
+                                            <div className="event-desc">{ourHistoryDataItem.description}</div>
+                                        </div>
+                                    </div>
+                                    <div id="sectional-d-col-4" className="col-6">
+                                        <img src={require(`../../assets/images/discover/${ourHistoryDataItem.imageName}.jpeg`)} className="event-image" alt="logo" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='row'>
-                                <div  id="sectional-d-col-3" className="col-6">
-                                    <div className="event-desc">{ourHistoryDataItem.description}</div>
-                                </div>
-                                <div  id="sectional-d-col-4" className="col-6">
-                                    <img src={require(`../../assets/images/discover/${ourHistoryDataItem.imageName}.jpeg`)} className="event-image" alt="logo" />
-                                </div>
-                            </div>
+                            }
                         </div>
-                    ))}
+                    ))
+                    }
                 </div>
 
                 {/* MOBILE VIEW */}
-                <div className='sectional-container mobile-view-discover'>
+                < div className='sectional-container mobile-view-discover' >
                     <div className="sectional-label">Our History</div>
-                    {ourHistoryData.map((ourHistoryDataItem, idx) => (
-                        <div key={idx}>
-                            <div className='row'>
-                                <div className="col-12">
-                                    <img src={require(`../../assets/images/discover/${ourHistoryDataItem.imageName}.jpeg`)} className="event-image" alt="logo" />
-                                </div>
-                                <div className="col-12">
-                                    <div className="event-desc">{ourHistoryDataItem.description}</div>
+                    {
+                        ourHistoryData.map((ourHistoryDataItem, idx) => (
+                            <div key={idx}>
+                                <div className='row'>
+                                    <div className="col-12">
+                                        <img src={require(`../../assets/images/discover/${ourHistoryDataItem.imageName}.jpeg`)} className="event-image" alt="logo" />
+                                    </div>
+                                    <div className="col-12">
+                                        <div className="event-name-padding">
+                                            <div className="event-title">{ourHistoryDataItem.title}</div>
+                                            <div className="event-desc">{ourHistoryDataItem.description}</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))
+                    }
                 </div>
-
             </div>
         </div>
     )

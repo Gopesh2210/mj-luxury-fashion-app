@@ -7,23 +7,38 @@ export const discoverData = {
 
 export const ourHistoryData = [
     {
-        "event" : "2010 Event",
-        "description" : "Event Description 1",
-        "imageName" : "show-1"
+        "title" : "BBA Event",
+        "description" : "some default text for description of this event",
+        "imageName" : "bba-2"
     },
     {
-        "event" : "2011 Event",
-        "description" : "Event Description 2",
-        "imageName" : "show-1"
+        "title" : "BBA Event",
+        "description" : "some default text for description of this event",
+        "imageName" : "bba-3"
     },
     {
-        "event" : "2012 Event",
-        "description" : "Event Description 3",
-        "imageName" : "show-1"
+        "title" : "IIFA 2013 Event",
+        "description" : "some default text for description of this event",
+        "imageName" : "iifa-2013"
     },
     {
-        "event" : "2013 Event",
-        "description" : "Event Description 4",
-        "imageName" : "show-1"
+        "title" : "Jia aur Jia Movie",
+        "description" : "some default text for description of this event",
+        "imageName" : "jia-aur-jia"
+    },
+    {
+        "title" : "Starwalk",
+        "description" : "some default text for description of this event",
+        "imageName" : "starwalk-1"
+    },
+    {
+        "title" : "Starwalk",
+        "description" : "some default text for description of this event",
+        "imageName" : "starwalk-2"
+    },
+    {
+        "title" : "Tour De",
+        "description" : "some default text for description of this event",
+        "imageName" : "tour-de"
     }
 ]

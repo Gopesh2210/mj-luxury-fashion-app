@@ -44,16 +44,27 @@
     justify-content: center;
     background-color: white;
 }
-
-.event-desc{
-    color: black;
+.event-name-padding{
     padding: 25%;
 }
-.event-image{
-    height: 100%;
-    width: 100%;
+.event-title{
+    color: black;
+    font-weight: 600;
+    font-size: 1.5em;
 }
-#sectional-d-col-1.col-6{
+.event-desc{
+    color: black;
+    font-weight: 300;
+    font-size: 1.25em;
+    text-align: justify;
+}
+.event-image{
+    border: 3px solid burlywood;
+    height: 35em;
+    width: 90%;
+}
+
+/* #sectional-d-col-1.col-6{
     padding: 0 !important; 
 }
 #sectional-d-col-2.col-6{
@@ -64,7 +75,7 @@
 }
 #sectional-d-col-4.col-6{
     padding: 0 !important; 
-}
+} */
 
 /* SCREEN RESIZING STYLES */
 
@@ -78,7 +89,7 @@
     .discover-image{
         width: 22.5em;
     }
-    .event-desc{
+    .event-name-padding{
         padding: 0.5em 0;
         margin-bottom: 2em;
     }
@@ -103,6 +114,7 @@
         text-align: justify;
     }
     .event-image{
+        height: 20em;
         padding: 0.5em;
     }
 }

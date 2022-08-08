@@ -1,5 +1,4 @@
 .footer-container{
-    height: 5em;
     border-top: 2px solid beige;
 }
 .footer-background{
@@ -19,11 +18,30 @@
 }
 
 .footer-sub-container{
-    padding : 1em;
+    padding : 0.25em;
 }
 
 .footer-text{
     color: black;
     font-size: 1.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
 }
+
+.footer-copyright{
+    padding-bottom: 0.5em;
+}
+
+.copyright-text{
+    color: black;
+    cursor: pointer;
+    font-family: 'BioRhyme', serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+.copyright-text:hover{
+    color: burlywood;
+    font-size: 1.25em;
+    transition: all 400ms ease-out;
+}
+
+

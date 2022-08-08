@@ -30,6 +30,12 @@
     margin: 1em 0;
 }
 
+.sample-price{
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+}
+
 .contact-logo{
     height: 1.5em;
     width: 1.5em;
@@ -42,12 +48,37 @@
 }
 
 .contact-us-card .card{
-    background-color: #f5f5f5;
+    background-color: white;
+}
+
+.contact-card-spacing{
+    padding: 0.75em;
 }
 
 .contact-text{
     margin: 1em 0;
     font-size: 1.25em;
+}
+
+.whatsapp-contact-text{
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 0.5em;
+    border: 1px solid gray;
+    border-radius: 25px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+
+    background: linear-gradient(to right, wheat, wheat 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 400ms ease;
+}
+
+.whatsapp-contact-text:hover{
+    color: black;
+    background-position: 0 100%;
 }
 
 @media only screen and (max-width: 768px) {
