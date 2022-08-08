@@ -8,8 +8,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
-## NOTE : start script in package.json should be as follows
-# "start": "serve -s build", 
+# NOTE : start script in package.json should be as follows
+## "start": "serve -s build"
+
 Runs the app in the production mode.\
 Open https://mj-brand-website.herokuapp.com to view it in your browser.
 
