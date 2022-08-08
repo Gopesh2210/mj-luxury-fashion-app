@@ -27,7 +27,7 @@ export default function Footer() {
                     </div>
                     <div className='row'>
                         <div className='footer-copyright'>
-                            <a href='https://www.linkedin.com/in/gopeshrajderkar/' className='copyright-text' target="_blank">© Gopesh Rajderkar 2022 </a>
+                            <a href='https://www.linkedin.com/in/gopeshrajderkar/' className='copyright-text' target="_blank" rel="noreferrer">© Gopesh Rajderkar 2022 </a>
                         </div>
                     </div>
                 </div>

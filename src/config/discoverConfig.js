@@ -29,16 +29,6 @@ export const ourHistoryData = [
     {
         "title" : "Starwalk",
         "description" : "some default text for description of this event",
-        "imageName" : "starwalk-1"
-    },
-    {
-        "title" : "Starwalk",
-        "description" : "some default text for description of this event",
         "imageName" : "starwalk-2"
-    },
-    {
-        "title" : "Tour De",
-        "description" : "some default text for description of this event",
-        "imageName" : "tour-de"
     }
 ]
